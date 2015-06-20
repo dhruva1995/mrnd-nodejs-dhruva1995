@@ -15,6 +15,21 @@ describe("JSIntro Test Suite", function(){
 			var i = JSIntro.Sum(-1,3);
 			expect(i).toEqual(2);
 		});
+		it("sum of -1 and -3 is -4", function () {
+
+		    var i = JSIntro.Sum(-1, -3);
+		    expect(i).toEqual(-4);
+		});
+		it("sum of 4 and 3 is 7", function () {
+
+		    var i = JSIntro.Sum(4, 3);
+		    expect(i).toEqual(7);
+		});
+		it("sum of 0 and  is 200000", function () {
+
+		    var i = JSIntro.Sum(0, 200000);
+		    expect(i).toEqual(200000);
+		});
 
 	});
 
@@ -24,6 +39,18 @@ describe("JSIntro Test Suite", function(){
 
 			var i = JSIntro.SumOfArray([2,3]);
 			expect(i).toEqual(5);
+		});
+
+		it("sum of -1 and 3 is 2", function () {
+
+		    var i = JSIntro.SumOfArray([-1, 3]);
+		    expect(i).toEqual(2);
+		});
+
+		it("sum of -12 and 12 is 0", function () {
+
+		    var i = JSIntro.SumOfArray([-12, 12]);
+		    expect(i).toEqual(0);
 		});
 
 	});
@@ -66,5 +93,11 @@ describe("JSIntro Test Suite", function(){
 			var str = JSIntro.ReverseString("a");
 			expect(str).toEqual("a");
 		});
+		it("a reversed is ", function () {
+
+		    var str = JSIntro.ReverseString("");
+		    expect(str).toEqual("");
+		});
+
 	});
 });
